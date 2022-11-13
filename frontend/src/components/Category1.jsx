@@ -13,6 +13,7 @@ const Category1 = () => {
     }, [])
         
     return (
+        <>
         <div className="container mt-4">
             <div className="divCategory1">
                 <h1>Categoría 1</h1>
@@ -21,6 +22,15 @@ const Category1 = () => {
                 <ItemList data={data} />
             </div>
         </div>
+        <div className="container mt-4">
+            <div className="divCategory1">
+                <h1>Categoría 2</h1>
+            </div>
+            <div className="divCategory2 d-flex flex-wrap mt-4 justify-content-center">
+                <ItemList data={data} />
+            </div>
+        </div>
+        </>
     )
 }
 

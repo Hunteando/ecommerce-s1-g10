@@ -1,14 +1,23 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Category1 from "./components/Category1"
-import Category2 from "./components/Category2"
+import Login from "./components/Login"
 import NavBar from "./components/NavBar"
+import Footer from "./components/Footer"
+import PasswordRecovery from "./components/PasswordRecovery"
+import Register from "./components/Register"
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <NavBar />
-      <Category1 />
-      <Category2 />
-    </div>
+      <Routes>
+        <Route path="/" element={ <Category1 /> } />
+        <Route path="/login" element={ <Login /> } />
+        <Route path="/recuperarpassword" element={ <PasswordRecovery /> } />
+        <Route path="/registro" element={ <Register /> } />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   )
 }
 

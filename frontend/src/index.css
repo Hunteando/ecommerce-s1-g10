@@ -1,12 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --pink: #AF3A72;
   --green: #CAD386;
   --white: #FFFCFD;
   --black: #191A21;
+  --pinky: #FDE6F1;
 }
 
 .navbarColor{
-  background-color: var(--pink) ; 
+  background-color: var(--pink); 
 }
 .colorCart{
   color: var(--white);
@@ -16,7 +23,23 @@
   background-color: var(--green);
   font-weight: bold;
 }
-
+/* Login */
+.bgLoginContainer {
+  background-color: var(--pinky);
+  width: 700px;
+  border-radius: 10px;
+}
+.h1Login {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--pink)
+}
+.btnLogin {
+  background-color: var(--green);
+}
+.btnLostPassword {
+  color: var(--pink);
+}
 /* media query mobile */
 @media screen and (min-width: 375px) {
   .imgLogo {
@@ -46,6 +69,112 @@
   .divCategory2 img {
     width: 150px;
   }
+  /* Login */
+  .bgLoginContainer {
+    background-color: var(--pinky);
+    width: 700px;
+    border-radius: 10px;
+  }
+  .h1Login {
+    font-size: 21px;
+    font-weight: bold;
+    color: var(--pink)
+  }
+  .flexLastInputs {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  .btnLogin {
+    background-color: var(--green);
+  }
+  .btnLostPassword {
+    color: var(--pink);
+  }
+  .labelsLogin {
+    font-size: 15px;
+  }
+  .h2Login {
+    font-size: 14px;
+    padding: 21px;
+  }
+  .spanLogin {
+    color: var(--pink);
+    font-weight: bold;
+  }
+  .inputsLogin {
+    width: 250px;
+  }
+  .flexFooter {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black);
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
+  }
+
+  .divRedes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .navFooter {
+    padding-bottom: 15px;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+
+  .textFooterBot {
+    background-color: #131313;
+    color: var(--white);
+    font-size: 15px;
+    padding: 20px 0 10px;
+  }
+
+  .divFormFooter {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+  }
+
+  .btnFooter {
+    width: 5rem;
+    margin-top: 5px;
+  }
+
+  .inputFooter {
+    width: 11.5rem;
+  }
+
+  .labelFooter {
+    font-size: 13px;
+    font-weight: bold;
+    padding-bottom: 2px;
+
+  }
+
+  .divLogoFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imgLogoFooter {
+    width: 7rem;
+  }
+
+  .linkFooter {
+    text-decoration: none;
+    color: var(--white);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -61,6 +190,60 @@
   .divCategory2 img {
     width: 200px;
   }
+  /* Login */
+  .h1Login {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--pink)
+  }
+  .flexLastInputs {
+    flex-direction: row;
+  }
+  .labelsLogin {
+    font-size: 20px;
+  }
+  .h2Login {
+    font-size: 20px;
+    padding: 21px;
+  }
+  .inputsLogin {
+    width: 100%;
+  }
+  .flexFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+  .divRedes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-left: 6rem;
+    padding: 35px 0 20px 0;
+  }
+  .navFooter{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+
+  }
+  .labelFooter{
+    font-size: 16px;
+  }
+  .inputFooter{
+    width: 207px;
+    height: 30px;
+}
 }
 
 @media screen and (min-width: 1440px) {
@@ -75,6 +258,55 @@
   }
   .divCategory2 img {
     width: 180px;
+  }
+  .flexFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+justify-content: center;
+width: 100%;
+margin-top: 30px;
+  }
+  .footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    width: 50%;
+  }
+  .divRedes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 87px;
+
+  }
+  .divLogoFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imgLogoFooter {
+    width: 264px;
+  }
+  .divFormFooter{
+    gap: 14px;
+  }
+  .labelFooter{
+    font-size: 20px;
+  }
+  .inputFooter{
+    width: 388px;
+    height: 38px;
+  }
+  .navFooter{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
   }
 }
 

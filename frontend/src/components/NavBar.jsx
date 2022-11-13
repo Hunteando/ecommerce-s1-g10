@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import imgLogo from "../images/TortasBibi-Logo_header.png"
 import banner1 from "../images/banner1.png"
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
 
@@ -9,16 +10,20 @@ const NavBar = () => {
         <>
         <nav className="navbar navbar-expand-lg navbar-dark navbarColor">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">
-                    <img className="imgLogo" src={imgLogo} alt="" />
-                </a>
+                <Link to='/'>
+                    <span className="navbar-brand">
+                        <img className="imgLogo" src={imgLogo} alt="" />
+                    </span>
+                </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0 fw-bold d-flex gap-4">
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="#">Inicio</a>
+                            <Link to='/' className="text-decoration-none">
+                                <span className="nav-link text-white" href="#">Inicio</span>
+                            </Link>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link text-white" href="#">Productos</a>
@@ -33,8 +38,9 @@ const NavBar = () => {
                             <button className="btn btn-outline-light" type="submit">Buscar</button>
                         </form>
                         <div className="d-flex">
+                        <Link to='/login'>
                             <button className="btn btn-outline-light" type="submit">Iniciar sesión</button>
-
+                        </Link>
                         </div>
                         <div className="d-flex pt-2">
                             <FontAwesomeIcon className="colorCart" icon={faShoppingCart} />
