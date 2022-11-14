@@ -355,33 +355,3 @@
     font-size: 20px;
   }
 }
-
-.divLogoFooter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.imgLogoFooter {
-  width: 264px;
-}
-
-.divFormFooter {
-  gap: 14px;
-}
-
-.labelFooter {
-  font-size: 20px;
-}
-
-.inputFooter {
-  width: 388px;
-  height: 38px;
-}
-
-.navFooter {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  font-size: 20px;
-}
