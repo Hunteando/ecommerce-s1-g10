@@ -12,98 +12,121 @@
   --pinky: #FDE6F1;
 }
 
-.navbarColor{
-  background-color: var(--pink); 
+.navbarColor {
+  background-color: var(--pink);
 }
-.colorCart{
+
+.colorCart {
   color: var(--white);
   font-size: 25px;
 }
+
 .bgButton {
   background-color: var(--green);
   font-weight: bold;
 }
+
 /* Login */
 .bgLoginContainer {
   background-color: var(--pinky);
   width: 700px;
   border-radius: 10px;
 }
+
 .h1Login {
   font-size: 40px;
   font-weight: bold;
   color: var(--pink)
 }
+
 .btnLogin {
   background-color: var(--green);
 }
+
 .btnLostPassword {
   color: var(--pink);
 }
+
 /* media query mobile */
 @media screen and (min-width: 375px) {
   .imgLogo {
     width: 3rem;
-    }
+  }
+
   .divInputs {
     flex-direction: column;
   }
+
   .bannerImg {
     object-fit: cover;
     width: 100vw;
   }
+
   .divCategory1 {
     background-color: var(--pink);
     border-radius: 10px;
     display: flex;
     align-items: center;
   }
+
   .divCategory1 h1 {
     font-size: 16px;
     padding: 15px 0 10px 31px;
     color: var(--white)
   }
+
   .divCategory2 {
     gap: 20px;
   }
+
   .divCategory2 img {
     width: 150px;
   }
+
   /* Login */
   .bgLoginContainer {
     background-color: var(--pinky);
     width: 700px;
     border-radius: 10px;
   }
+
   .h1Login {
     font-size: 21px;
     font-weight: bold;
     color: var(--pink)
   }
+
   .flexLastInputs {
     flex-direction: column;
     padding-top: 20px;
   }
+
   .btnLogin {
     background-color: var(--green);
   }
+
   .btnLostPassword {
     color: var(--pink);
   }
+
   .labelsLogin {
     font-size: 15px;
   }
+
   .h2Login {
     font-size: 14px;
     padding: 21px;
   }
+
   .spanLogin {
     color: var(--pink);
     font-weight: bold;
   }
+
   .inputsLogin {
     width: 250px;
   }
+
   .flexFooter {
     display: flex;
     flex-direction: column;
@@ -180,35 +203,44 @@
 @media screen and (min-width: 768px) {
   .imgLogo {
     width: 6rem;
-    }
+  }
+
   .divInputs {
     flex-direction: row;
   }
+
   .divCategory2 {
     gap: 30px;
   }
+
   .divCategory2 img {
     width: 200px;
   }
+
   /* Login */
   .h1Login {
     font-size: 40px;
     font-weight: bold;
     color: var(--pink)
   }
+
   .flexLastInputs {
     flex-direction: row;
   }
+
   .labelsLogin {
     font-size: 20px;
   }
+
   .h2Login {
     font-size: 20px;
     padding: 21px;
   }
+
   .inputsLogin {
     width: 100%;
   }
+
   .flexFooter {
     display: flex;
     flex-direction: row;
@@ -216,12 +248,14 @@
     align-items: center;
     margin-top: 20px;
   }
-  .footer{
+
+  .footer {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 30px;
   }
+
   .divRedes {
     display: flex;
     flex-direction: row;
@@ -231,43 +265,50 @@
     margin-left: 6rem;
     padding: 35px 0 20px 0;
   }
-  .navFooter{
+
+  .navFooter {
     display: flex;
     flex-direction: column;
-    gap:10px;
-
+    gap: 10px;
   }
-  .labelFooter{
+
+  .labelFooter {
     font-size: 16px;
   }
-  .inputFooter{
+
+  .inputFooter {
     width: 207px;
     height: 30px;
-}
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .imgLogo {
     width: 7rem;
-    }
+  }
+
   .divInputs {
     flex-direction: row;
   }
+
   .divCategory2 {
     gap: 30px;
   }
+
   .divCategory2 img {
     width: 180px;
   }
+
   .flexFooter {
     display: flex;
     flex-direction: row;
     align-items: center;
-justify-content: center;
-width: 100%;
-margin-top: 30px;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
   }
-  .footer{
+
+  .footer {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -275,14 +316,15 @@ margin-top: 30px;
     gap: 30px;
     width: 50%;
   }
+
   .divRedes {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     gap: 87px;
-
   }
+
   .divLogoFooter {
     display: flex;
     align-items: center;
@@ -292,17 +334,21 @@ margin-top: 30px;
   .imgLogoFooter {
     width: 264px;
   }
-  .divFormFooter{
+
+  .divFormFooter {
     gap: 14px;
   }
-  .labelFooter{
+
+  .labelFooter {
     font-size: 20px;
   }
-  .inputFooter{
+
+  .inputFooter {
     width: 388px;
     height: 38px;
   }
-  .navFooter{
+
+  .navFooter {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -310,9 +356,32 @@ margin-top: 30px;
   }
 }
 
+.divLogoFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.imgLogoFooter {
+  width: 264px;
+}
 
+.divFormFooter {
+  gap: 14px;
+}
 
+.labelFooter {
+  font-size: 20px;
+}
 
+.inputFooter {
+  width: 388px;
+  height: 38px;
+}
 
-
+.navFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 20px;
+}
