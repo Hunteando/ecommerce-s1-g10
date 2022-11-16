@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Cart = () => {
     return (
@@ -8,7 +8,7 @@ const Cart = () => {
                     <h1 className='h1Cart p-4'>CARRITO DE COMPRAS</h1>
                 </div>
                 <div className='col-sm-12 d-flex justify-content-center align-items-center bgCartContainer'>
-                    <table class="table text-center">
+                    <table className="table text-center">
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
@@ -52,8 +52,12 @@ const Cart = () => {
                 <div className='col-sm-12 d-flex flex-column justify-content-between align-items-center bgCartContainer px-5'>
                     <p className='pTextCart text-center'>¿Deseas realizar el pago por los productos seleccionados?</p>
                     <div className='d-flex gap-5 justify-content-between align-items-center mb-3'>
-                        <button type="submit" className="btn btnCart1 text-dark fw-bold">Ir a pagar</button>
-                        <button type="submit" className="btn btnCart2 text-dark fw-bold">Seguir comprando</button>
+                        <Link to='/checkout'>
+                            <button type="submit" className="btn btnCart1 text-dark fw-bold">Ir a pagar</button>
+                        </Link>
+                        <Link to='/'>
+                            <button type="submit" className="btn btnCart2 text-dark fw-bold">Seguir comprando</button>
+                        </Link>
                     </div>
                 </div>
             </div>

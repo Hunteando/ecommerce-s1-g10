@@ -6,6 +6,9 @@ import Footer from "./components/Footer"
 import PasswordRecovery from "./components/PasswordRecovery"
 import Register from "./components/Register"
 import Cart from "./components/Cart"
+import Checkout from "./components/Checkout"
+import ProductsContainer from "./components/ProductsContainer"
+import ItemDetailContainer from "./components/ItemDetailContainer"
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
         <Route path="/recuperarpassword" element={ <PasswordRecovery /> } />
         <Route path="/registro" element={ <Register /> } />
         <Route path="/cart" element={ <Cart /> } />
+        <Route path="/checkout" element={ <Checkout /> } />
+        <Route path="/productos" element={ <ProductsContainer /> } />
+        <Route path='/item/:itemId' element={ <ItemDetailContainer /> } />
       </Routes>
       <Footer />
     </BrowserRouter>

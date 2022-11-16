@@ -1,8 +1,7 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import imgLogo from "../images/TortasBibi-Logo_header.png"
 import banner1 from "../images/banner1.png"
 import { Link } from 'react-router-dom'
+import CartWidget from "./CartWidget"
 
 const NavBar = () => {
 
@@ -26,7 +25,9 @@ const NavBar = () => {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="#">Productos</a>
+                            <Link to='/productos' className="text-decoration-none">
+                                <span className="nav-link text-white" href="#">Productos</span>
+                            </Link>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link text-white" href="#">Contacto</a>
@@ -42,9 +43,7 @@ const NavBar = () => {
                             <button className="btn btn-outline-light" type="submit">Iniciar sesión</button>
                         </Link>
                         </div>
-                        <div className="d-flex pt-2">
-                            <FontAwesomeIcon className="colorCart" icon={faShoppingCart} />
-                        </div>
+                        <CartWidget />
                     </div>
                 </div>
             </div>
