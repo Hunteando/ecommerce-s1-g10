@@ -16,21 +16,21 @@ const ProductsContainer = () => {
             <div className="divProducts1 col-sm-6 col-md-5 col-lg-4">
                 <p className='pProducts'>Filtrar por:</p>
                 <div className='divFilter'>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                        <label class="form-check-label labelProducts" for="flexRadioDefault1">
+                    <div className="form-check">
+                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                        <label className="form-check-label labelProducts" for="flexRadioDefault1">
                             Categoría 1
                         </label>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                        <label class="form-check-label labelProducts" for="flexRadioDefault1">
+                    <div className="form-check">
+                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                        <label className="form-check-label labelProducts" for="flexRadioDefault1">
                             Categoría 2
                         </label>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                        <label class="form-check-label labelProducts" for="flexRadioDefault1">
+                    <div className="form-check">
+                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                        <label className="form-check-label labelProducts" for="flexRadioDefault1">
                             Categoría 3
                         </label>
                     </div>

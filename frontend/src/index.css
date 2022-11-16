@@ -195,11 +195,85 @@
     color: var(--white);
   }
 
+  /* Item Detail */
+  .divDetail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .imgDetail {
+    width: 328px;
+    height: 328px;
+    border-radius: 10px;
+  }
+
+  .bgSecondColumnDetail {
+    background-color: var(--pinky);
+    border-radius: 10px;
+    padding: 20px;
+    width: 328px;
+  }
+
+  .bgSecondColumnDetail h3 {
+    color: var(--pink);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .priceQuantity h4 {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--pink);
+    padding-top: 5px;
+  }
+
+  .priceQuantity span {
+    color: var(--black);
+  }
+
+  .descriptionDetail, .stockDetail {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .btnDetail {
+    background-color: var(--green);
+    font-size: 16px;
+    width: 163px;
+  }
+
+  /* ItemCount */
+  .divItemCount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .btnAddLess {
+    width: 26px;
+    height: 26px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+
+  .spanItemCount {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
   /* Cart */
   .bgCartContainer {
     background-color: var(--pinky);
     width: 100%;
-    border-radius: 10px;
+    border-radius: 13px 30px;
   }
   .h1Cart {
     font-size: 18px;
@@ -542,6 +616,77 @@
     font-size: 14px;
     width: 130px;
   }
+
+  /* Item Detail */
+  .divDetail {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .imgDetail {
+    width: 328px;
+    height: 418px;
+    border-radius: 10px;
+  }
+
+  .bgSecondColumnDetail {
+    background-color: var(--pinky);
+    border-radius: 10px;
+    padding: 20px;
+    width: 328px;
+  }
+
+  .bgSecondColumnDetail h3 {
+    color: var(--pink);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .priceQuantity h4 {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--pink);
+    padding-top: 5px;
+  }
+
+  .priceQuantity span {
+    color: var(--black);
+  }
+
+  .descriptionDetail, .stockDetail {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .btnDetail {
+    background-color: var(--green);
+    font-size: 16px;
+    width: 163px;
+  }
+
+  /* ItemCount */
+  .divItemCount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .btnAddLess {
+    width: 26px;
+    height: 26px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+
+  .spanItemCount {
+    font-weight: bold;
+    font-size: 18px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -753,5 +898,79 @@
     background-color: var(--green);
     font-size: 14px;
     width: 130px;
+  }
+
+  /* Item Detail */
+  .divDetail {
+    display: flex;
+    flex-direction: row;
+    gap: 59px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .imgDetail {
+    width: 778px;
+    height: 778px;
+    border-radius: 10px;
+  }
+
+  .bgSecondColumnDetail {
+    background-color: var(--pinky);
+    border-radius: 10px;
+    padding: 20px;
+    width: 328px;
+  }
+
+  .bgSecondColumnDetail h3 {
+    color: var(--pink);
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .priceQuantity h4 {
+    font-weight: bold;
+    font-size: 22px;
+    color: var(--pink);
+    padding-top: 5px;
+  }
+
+  .priceQuantity span {
+    color: var(--black);
+  }
+
+  .descriptionDetail, .stockDetail {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .btnDetail {
+    background-color: var(--green);
+    font-size: 18px;
+    width: 200px;
+  }
+
+  /* ItemCount */
+  .divItemCount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .btnAddLess {
+    width: 28px;
+    height: 28px;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+
+  .spanItemCount {
+    font-weight: bold;
+    font-size: 22px;
   }
 }

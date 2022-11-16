@@ -2,6 +2,7 @@ import { FaInstagram } from 'react-icons/fa';
 import { FaFacebookF } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa';
 import {FaMapMarkedAlt} from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 import imgLogo from "../images/TortasBibi-Logo_header.png"
 const Footer = () => {
@@ -18,15 +19,31 @@ const Footer = () => {
                             placeholder="Ingresa aqui tu email"
                             minLength="4" maxLength="8" size="10">
                         </input>
-                        <a href="#" className="btn bgButton btnFooter">Enviar</a>
+                        <button className="btn bgButton btnFooter">Enviar</button>
                     </div>
                 </div>
                 <div className='divRedes'>
                     <div className='navFooter'>
-                        <div><a className='linkFooter' href="#">Inicio</a></div>
-                        <div><a className='linkFooter' href="#">Productos</a></div>
-                        <div><a className='linkFooter' href="#">Sobre Nosotros</a></div>
-                        <div><a className='linkFooter' href="#">Contacto</a></div>
+                        <div>
+                            <Link to='/' className='text-decoration-none'>
+                                <span className='linkFooter'>Inicio</span>
+                            </Link>
+                        </div>
+                        <div>
+                            <Link to='/productos' className='text-decoration-none'>
+                                <span className='linkFooter'>Productos</span>
+                            </Link>
+                        </div>
+                        <div>
+                            <Link to='/' className='text-decoration-none'>
+                                <span className='linkFooter'>Sobre Nosotros</span>
+                            </Link>
+                        </div>
+                        <div>
+                            <Link to='/' className='text-decoration-none'>
+                                <span className='linkFooter'>Contacto</span>
+                            </Link>
+                        </div>
                     </div>
                     <div className='navFooter'>
                         <div><a className='linkFooter' href="#"><FaInstagram/> Instagram </a></div>
