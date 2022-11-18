@@ -9,6 +9,7 @@ import Cart from "./components/Cart"
 import Checkout from "./components/Checkout"
 import ProductsContainer from "./components/ProductsContainer"
 import ItemDetailContainer from "./components/ItemDetailContainer"
+import UserPanel from "./components/UserPanel"
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/checkout" element={ <Checkout /> } />
         <Route path="/productos" element={ <ProductsContainer /> } />
         <Route path='/item/:itemId' element={ <ItemDetailContainer /> } />
+        <Route path='/paneldeusuario' element={ <UserPanel /> } />
       </Routes>
       <Footer />
     </BrowserRouter>

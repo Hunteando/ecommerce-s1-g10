@@ -21,16 +21,21 @@ const NavBar = () => {
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0 fw-bold d-flex gap-4">
                         <li className="nav-item">
                             <Link to='/' className="text-decoration-none">
-                                <span className="nav-link text-white" href="#">Inicio</span>
+                                <span className="nav-link text-white">Inicio</span>
                             </Link>
                         </li>
                         <li className="nav-item">
                             <Link to='/productos' className="text-decoration-none">
-                                <span className="nav-link text-white" href="#">Productos</span>
+                                <span className="nav-link text-white">Productos</span>
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="#">Contacto</a>
+                                <span className="nav-link text-white">Sobre nosotros</span>
+                        </li>
+                        <li className="nav-item">
+                            <Link to='/contacto' className="text-decoration-none">
+                                <span className="nav-link text-white">Contacto</span>
+                            </Link>
                         </li>
                     </ul>
                     <div className="d-flex gap-3 me-3 divInputs">

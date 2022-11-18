@@ -273,7 +273,7 @@
   .bgCartContainer {
     background-color: var(--pinky);
     width: 100%;
-    border-radius: 13px 30px;
+    border-radius: 10px;
   }
   .h1Cart {
     font-size: 18px;
@@ -391,6 +391,30 @@
     background-color: var(--green);
     font-size: 10px;
     width: 110px;
+  }
+
+  /* Panel de usuario */
+  .h3UserPanel {
+    font-size: 15px;
+    text-align: center;
+    color: var(--pink);
+  }
+
+  .divUserPanel {
+    text-align: left;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .divUserPanel span {
+    padding: 8px 0px;
+  }
+
+  .divBtnUser {
+    width: 250px;
   }
 }
 
@@ -687,6 +711,31 @@
     font-weight: bold;
     font-size: 18px;
   }
+
+  /* Panel de usuario */
+  .h3UserPanel {
+    font-size: 20px;
+    text-align: center;
+    color: var(--pink);
+  }
+
+  .divUserPanel {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 105px;
+  }
+
+  .divUserPanel span {
+    padding: 8px 0px;
+    font-size: 18px;
+  }
+
+  .divBtnUser {
+    width: 420px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -972,5 +1021,30 @@
   .spanItemCount {
     font-weight: bold;
     font-size: 22px;
+  }
+
+  /* Panel de usuario */
+  .h3UserPanel {
+    font-size: 24px;
+    text-align: center;
+    color: var(--pink);
+  }
+
+  .divUserPanel {
+    width: 650px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 320px;
+  }
+
+  .divUserPanel span {
+    padding: 8px 0px;
+    font-size: 20px;
+  }
+
+  .divBtnUser {
+    width: 700px;
   }
 }
