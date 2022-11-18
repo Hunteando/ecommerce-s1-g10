@@ -10,6 +10,7 @@ import Checkout from "./components/Checkout"
 import ProductsContainer from "./components/ProductsContainer"
 import ItemDetailContainer from "./components/ItemDetailContainer"
 import UserPanel from "./components/UserPanel"
+import Contact from "./components/Contact"
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/productos" element={ <ProductsContainer /> } />
         <Route path='/item/:itemId' element={ <ItemDetailContainer /> } />
         <Route path='/paneldeusuario' element={ <UserPanel /> } />
+        <Route path="/contacto" element={ <Contact /> } />
       </Routes>
       <Footer />
     </BrowserRouter>
