@@ -1,0 +1,1142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pink: #AF3A72;
+  --green: #CAD386;
+  --white: #FFFCFD;
+  --black: #191A21;
+  --pinky: #FDE6F1;
+}
+
+.navbarColor {
+  background-color: var(--pink);
+}
+
+.colorCart {
+  color: var(--white);
+  font-size: 25px;
+}
+
+.valueCart {
+  position: relative;
+  bottom: 25px;
+  right: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--white)
+}
+
+.bgButton {
+  background-color: var(--green);
+  font-weight: bold;
+}
+
+/* media query mobile */
+@media screen and (min-width: 375px) {
+  .imgLogo {
+    width: 3rem;
+  }
+
+  .divInputs {
+    flex-direction: column;
+  }
+
+  .bannerImg {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .divCategory1 {
+    background-color: var(--pink);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .divCategory1 h1 {
+    font-size: 16px;
+    padding: 15px 0 10px 31px;
+    color: var(--white)
+  }
+
+  .divCategory2 {
+    gap: 20px;
+  }
+
+  .divCategory2 img {
+    width: 150px;
+  }
+
+  /* Login */
+  .bgLoginContainer {
+    background-color: var(--pinky);
+    width: 700px;
+    border-radius: 10px;
+  }
+
+  .h1Login {
+    font-size: 21px;
+    font-weight: bold;
+    color: var(--pink)
+  }
+
+  .flexLastInputs {
+    align-items: center;
+    flex-direction: row;
+    padding-top: 20px;
+    margin: 0 2px 0 2px
+  }
+  .textoContacto{
+    font-size: 14px;
+  }
+
+  .btnLogin {
+    background-color: var(--green);
+  }
+
+  .btnLostPassword {
+    color: var(--pink);
+  }
+
+  .labelsLogin {
+    font-size: 15px;
+  }
+
+  .h2Login {
+    font-size: 14px;
+    padding: 21px;
+  }
+
+  .spanLogin {
+    color: var(--pink);
+    font-weight: bold;
+  }
+
+  .inputsLogin {
+    width: 250px;
+  }
+
+  .flexFooter {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black);
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
+  }
+
+  .divRedes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .navFooter {
+    padding-bottom: 15px;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+
+  .textFooterBot {
+    background-color: #131313;
+    color: var(--white);
+    font-size: 15px;
+    padding: 20px 0 10px;
+  }
+
+  .divFormFooter {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    gap: 8px;
+  }
+
+  .btnFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 73px;
+    height: 23px;
+    font-size: 13px;
+    margin-top: 5px;
+  }
+
+  .inputFooter {
+    width: 170px;
+    height: 22px;
+    font-size: 12px;
+    padding: 2px;
+  }
+
+  .labelFooter {
+    font-size: 13px;
+    font-weight: bold;
+    padding-bottom: 2px;
+  }
+
+  .divLogoFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imgLogoFooter {
+    width: 7rem;
+  }
+
+  .linkFooter {
+    text-decoration: none;
+    color: var(--white);
+  }
+
+  /* Item Detail */
+  .divDetail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .imgDetail {
+    width: 328px;
+    height: 328px;
+    border-radius: 10px;
+  }
+
+  .bgSecondColumnDetail {
+    background-color: var(--pinky);
+    border-radius: 10px;
+    padding: 20px;
+    width: 328px;
+  }
+
+  .bgSecondColumnDetail h3 {
+    color: var(--pink);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .priceQuantity h4 {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--pink);
+    padding-top: 5px;
+  }
+
+  .priceQuantity span {
+    color: var(--black);
+  }
+
+  .descriptionDetail, .stockDetail {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .btnDetail {
+    background-color: var(--green);
+    font-size: 16px;
+    width: 163px;
+  }
+
+  /* ItemCount */
+  .divItemCount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .btnAddLess {
+    width: 26px;
+    height: 26px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+
+  .spanItemCount {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  /* Cart */
+  .bgCartContainer {
+    background-color: var(--pinky);
+    width: 100%;
+    border-radius: 10px;
+  }
+  .h1Cart {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--pink);
+    text-align: center;
+  }
+  .bgCartContainer table tr {
+    font-size: 12px;
+  }
+  .textCart {
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px 0px;
+  }
+  .totalCart {
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px 0px;
+  }
+  .pTextCart {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 0px;
+  }
+  .btnCart1 {
+    background-color: var(--green);
+    font-size: 10px;
+    width: 80px;
+  }
+  .btnCart2 {
+    background-color: var(--green);
+    font-size: 10px;
+    width: 120px;
+  }
+  .widthCartCont {
+    width: 76px;
+    height: 28px;
+    border-radius: 10px;
+  }
+
+  /* Checkout */
+  .h3Checkout {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .formCheckout {
+    padding: 24px 36px;
+  }
+
+  .lblCheckout {
+    font-size: 16px;
+  }
+
+  .inputCheckout {
+    width: 240px;
+    height: 35px;
+  }
+
+  .pCheckout {
+    font-size: 12px;
+    text-align: justify;
+  }
+
+  .btnCheckout {
+    background-color: var(--green);
+    font-size: 12px;
+    width: 80px;
+  }
+
+  /* Products */
+  .divProducts1 {
+    border-radius: 10px;
+    background-color: var(--pinky);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px 0px;
+  }
+
+  .divProducts2 {
+    gap: 20px;
+  }
+
+  .divProducts2 img {
+    width: 150px;
+  }
+
+  .divFilter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .pProducts {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--pink)
+  }
+
+  .labelProducts {
+    font-size: 12px;
+  }
+
+  .btnProd1 {
+    background-color: var(--green);
+    font-size: 10px;
+    width: 80px;
+  }
+
+  .btnProd2 {
+    background-color: var(--green);
+    font-size: 10px;
+    width: 110px;
+  }
+
+  /* Panel de usuario */
+  .h3UserPanel {
+    font-size: 15px;
+    text-align: center;
+    color: var(--pink);
+  }
+
+  .divUserPanel {
+    text-align: left;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .divUserPanel span {
+    padding: 8px 0px;
+  }
+
+  .divBtnUser {
+    width: 250px;
+  }
+
+  /* AboutUs */
+  .aboutUsDiv {
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 2;
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .column1AboutUs .imgAboutUs {
+    width: 200px;
+  }
+
+  .column2AboutUs p {
+    text-align: justify;
+  }
+
+  /* Admin panel */
+  .inputCheckoutTextArea {
+    width: 240px;
+    height: 100px;
+  }
+
+  .faColorEdit {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+
+  .faColorTrash {
+    font-size: 16px;
+    margin-left: 5px;
+  }
+
+  .btnLinkAdminEdit {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .imgLogo {
+    width: 6rem;
+  }
+
+  .divInputs {
+    flex-direction: row;
+  }
+
+  .divCategory2 {
+    gap: 30px;
+  }
+
+  .divCategory2 img {
+    width: 200px;
+  }
+
+  /* Login */
+  .h1Login {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--pink)
+  }
+
+  .flexLastInputs {
+    flex-direction: row;
+  }
+
+  .labelsLogin {
+    font-size: 20px;
+  }
+
+  .h2Login {
+    font-size: 20px;
+    padding: 21px;
+  }
+
+  .inputsLogin {
+    width: 100%;
+  }
+
+  .flexFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .divFormFooter {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    gap: 10px;
+  }
+
+  .divRedes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-left: 6rem;
+    padding: 35px 0 20px 0;
+  }
+
+  .navFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btnFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85px;
+    height: 35px;
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+  .inputFooter {
+    width: 207px;
+    height: 30px;
+    font-size: 16px;
+    padding: 2px;
+  }
+
+  .labelFooter {
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 2px;
+  }
+
+  /* Cart */
+  .h1Cart {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--pink);
+    text-align: center;
+  }
+  .bgCartContainer table tr {
+    font-size: 16px;
+  }
+  .textCart {
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px 0px;
+  }
+  .totalCart {
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px 0px;
+  }
+  .pTextCart {
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px 0px;
+  }
+  .btnCart1 {
+    background-color: var(--green);
+    font-size: 16px;
+    width: 105px;
+  }
+  .btnCart2 {
+    background-color: var(--green);
+    font-size: 16px;
+    width: 175px;
+  }
+  .widthCartCont {
+    width: 145px;
+    height: 75px;
+    border-radius: 10px;
+  }
+  /* Checkout */
+  .h3Checkout {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .formCheckout {
+    padding: 24px 36px;
+  }
+
+  .lblCheckout {
+    font-size: 20px;
+  }
+
+  .inputCheckout {
+    width: 420px;
+    height: 38px;
+  }
+
+  .pCheckout {
+    margin-top: 12px;
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .btnCheckout {
+    background-color: var(--green);
+    font-size: 16px;
+    width: 98px;
+  }
+
+  /* Products */
+  .divMainProducts {
+    display: flex;
+    gap: 0;
+  }
+
+  .divProducts1 {
+    border-radius: 10px;
+    background-color: var(--pinky);
+    height: 236px;
+    width: 300px;
+    padding: 0 20px;
+    margin-top: 22px;
+  }
+
+  .divProducts2 {
+    gap: 20px;
+  }
+
+  .divProducts2 img {
+    width: 150px;
+  }
+
+  .divFilter {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pProducts {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--pink)
+  }
+
+  .labelProducts {
+    font-size: 18px;
+  }
+
+  .btnProd1 {
+    background-color: var(--green);
+    font-size: 14px;
+    width: 80px;
+  }
+
+  .btnProd2 {
+    background-color: var(--green);
+    font-size: 14px;
+    width: 130px;
+  }
+
+  /* Item Detail */
+  .divDetail {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .imgDetail {
+    width: 328px;
+    height: 418px;
+    border-radius: 10px;
+  }
+
+  .bgSecondColumnDetail {
+    background-color: var(--pinky);
+    border-radius: 10px;
+    padding: 20px;
+    width: 328px;
+  }
+
+  .bgSecondColumnDetail h3 {
+    color: var(--pink);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .priceQuantity h4 {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--pink);
+    padding-top: 5px;
+  }
+
+  .priceQuantity span {
+    color: var(--black);
+  }
+
+  .descriptionDetail, .stockDetail {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .btnDetail {
+    background-color: var(--green);
+    font-size: 16px;
+    width: 163px;
+  }
+
+  /* ItemCount */
+  .divItemCount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .btnAddLess {
+    width: 26px;
+    height: 26px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+
+  .spanItemCount {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  /* Panel de usuario */
+  .h3UserPanel {
+    font-size: 20px;
+    text-align: center;
+    color: var(--pink);
+  }
+
+  .divUserPanel {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 105px;
+  }
+
+  .divUserPanel span {
+    padding: 8px 0px;
+    font-size: 18px;
+  }
+
+  .divBtnUser {
+    width: 420px;
+  }
+
+  /* AboutUs */
+  .aboutUsDiv {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .column1AboutUs .imgAboutUs {
+    width: 200px;
+  }
+
+  .column2AboutUs p {
+    text-align: justify;
+  }
+
+  /* Admin panel */
+  .inputCheckoutTextArea {
+    width: 420px;
+    height: 100px;
+  }
+
+  .faColorEdit {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+
+  .faColorTrash {
+    font-size: 20px;
+    margin-left: 5px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .imgLogo {
+    width: 7rem;
+  }
+
+  .divInputs {
+    flex-direction: row;
+  }
+
+  .divCategory2 {
+    gap: 30px;
+  }
+
+  .divCategory2 img {
+    width: 180px;
+  }
+  /* Cart */
+  .bgCartContainer {
+    background-color: var(--pinky);
+    width: 1115px;
+    border-radius: 10px;
+  }
+
+  .flexFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    width: 50%;
+  }
+
+  .divRedes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 87px;
+  }
+
+  .divLogoFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imgLogoFooter {
+    width: 264px;
+  }
+
+  .divFormFooter {
+    gap: 14px;
+  }
+
+  .btnFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 39px;
+    font-size: 20px;
+    margin-top: 5px;
+  }
+
+  .inputFooter {
+    width: 388px;
+    height: 38px;
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  .labelFooter {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 2px;
+  }
+
+  .navFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+  }
+  /* Cart */
+  .cartContainer {
+    width: 1115px;
+  }
+  .bgCartContainer table tr {
+    font-size: 20px;
+  }
+  .textCart {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 0px;
+  }
+  .totalCart {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 0px;
+  }
+  .pTextCart {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px 0px;
+  }
+  .btnCart1 {
+    background-color: var(--green);
+    font-size: 16px;
+    width: 105px;
+  }
+  .btnCart2 {
+    background-color: var(--green);
+    font-size: 16px;
+    width: 175px;
+  }
+  .widthCartCont {
+    width: 197px;
+    height: 75px;
+    border-radius: 10px;
+  }
+  /* Checkout */
+  .h3Checkout {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .formCheckout {
+    padding: 28px 36px;
+  }
+
+  .lblCheckout {
+    font-size: 28px;
+  }
+
+  .inputCheckout {
+    width: 700px;
+    height: 50px;
+  }
+
+  .pCheckout {
+    margin-top: 25px;
+    font-size: 22px;
+    text-align: justify;
+  }
+
+  .btnCheckout {
+    background-color: var(--green);
+    font-size: 20px;
+    width: 110px;
+  }
+
+  /* Products */
+  .divMainProducts {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .divProducts1 {
+    border-radius: 10px;
+    background-color: var(--pinky);
+    height: 236px;
+    width: 300px;
+    padding: 0 20px;
+    margin-top: 22px;
+  }
+
+  .divProducts2 {
+    gap: 30px;
+  }
+
+  .divProducts2 img {
+    width: 150px;
+  }
+
+  .divFilter {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pProducts {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--pink)
+  }
+
+  .labelProducts {
+    font-size: 18px;
+  }
+
+  .btnProd1 {
+    background-color: var(--green);
+    font-size: 14px;
+    width: 80px;
+  }
+
+  .btnProd2 {
+    background-color: var(--green);
+    font-size: 14px;
+    width: 130px;
+  }
+
+  /* Item Detail */
+  .divDetail {
+    display: flex;
+    flex-direction: row;
+    gap: 59px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .imgDetail {
+    width: 778px;
+    height: 778px;
+    border-radius: 10px;
+  }
+
+  .bgSecondColumnDetail {
+    background-color: var(--pinky);
+    border-radius: 10px;
+    padding: 20px;
+    width: 328px;
+  }
+
+  .bgSecondColumnDetail h3 {
+    color: var(--pink);
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .priceQuantity h4 {
+    font-weight: bold;
+    font-size: 22px;
+    color: var(--pink);
+    padding-top: 5px;
+  }
+
+  .priceQuantity span {
+    color: var(--black);
+  }
+
+  .descriptionDetail, .stockDetail {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .btnDetail {
+    background-color: var(--green);
+    font-size: 18px;
+    width: 200px;
+  }
+
+  /* ItemCount */
+  .divItemCount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .btnAddLess {
+    width: 28px;
+    height: 28px;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+
+  .spanItemCount {
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  /* Panel de usuario */
+  .h3UserPanel {
+    font-size: 24px;
+    text-align: center;
+    color: var(--pink);
+  }
+
+  .divUserPanel {
+    width: 650px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 320px;
+  }
+
+  .divUserPanel span {
+    padding: 8px 0px;
+    font-size: 20px;
+  }
+
+  .divBtnUser {
+    width: 700px;
+  }
+
+  /* Admin panel */
+  .inputCheckoutTextArea {
+    width: 700px;
+    height: 100px;
+  }
+
+  .faColorEdit {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+
+  .faColorTrash {
+    font-size: 24px;
+    margin-left: 10px;
+  }
+}
