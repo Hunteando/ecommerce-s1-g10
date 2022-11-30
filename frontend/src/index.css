@@ -421,6 +421,45 @@
   .divBtnUser {
     width: 250px;
   }
+
+  /* AboutUs */
+  .aboutUsDiv {
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 2;
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .column1AboutUs .imgAboutUs {
+    width: 200px;
+  }
+
+  .column2AboutUs p {
+    text-align: justify;
+  }
+
+  /* Admin panel */
+  .inputCheckoutTextArea {
+    width: 240px;
+    height: 100px;
+  }
+
+  .faColorEdit {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+
+  .faColorTrash {
+    font-size: 16px;
+    margin-left: 5px;
+  }
+
+  .btnLinkAdminEdit {
+    text-decoration: none;
+    color: black;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -741,6 +780,38 @@
   .divBtnUser {
     width: 420px;
   }
+
+  /* AboutUs */
+  .aboutUsDiv {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .column1AboutUs .imgAboutUs {
+    width: 200px;
+  }
+
+  .column2AboutUs p {
+    text-align: justify;
+  }
+
+  /* Admin panel */
+  .inputCheckoutTextArea {
+    width: 420px;
+    height: 100px;
+  }
+
+  .faColorEdit {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+
+  .faColorTrash {
+    font-size: 20px;
+    margin-left: 5px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -1051,5 +1122,21 @@
 
   .divBtnUser {
     width: 700px;
+  }
+
+  /* Admin panel */
+  .inputCheckoutTextArea {
+    width: 700px;
+    height: 100px;
+  }
+
+  .faColorEdit {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+
+  .faColorTrash {
+    font-size: 24px;
+    margin-left: 10px;
   }
 }

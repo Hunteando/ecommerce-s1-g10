@@ -30,7 +30,9 @@ const NavBar = () => {
                             </Link>
                         </li>
                         <li className="nav-item">
-                                <span className="nav-link text-white">Sobre nosotros</span>
+                            <Link to='/sobrenosotros' className="text-decoration-none">
+                                <span className="nav-link text-white">Sobre Nosotros</span>
+                            </Link>
                         </li>
                         <li className="nav-item">
                             <Link to='/contacto' className="text-decoration-none">

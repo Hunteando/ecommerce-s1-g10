@@ -11,6 +11,9 @@ import ProductsContainer from "./components/ProductsContainer"
 import ItemDetailContainer from "./components/ItemDetailContainer"
 import UserPanel from "./components/UserPanel"
 import Contact from "./components/Contact"
+import AboutUs from "./components/AboutUs"
+import AdminPanel from "./components/AdminPanel"
+import EditProducts from "./components/EditProducts"
 
 function App() {
   return (
@@ -26,7 +29,10 @@ function App() {
         <Route path="/productos" element={ <ProductsContainer /> } />
         <Route path='/item/:itemId' element={ <ItemDetailContainer /> } />
         <Route path='/paneldeusuario' element={ <UserPanel /> } />
+        <Route path='/paneladministrador' element={ <AdminPanel /> } />
+        <Route path='/modificarproducto' element={ <EditProducts /> } />
         <Route path="/contacto" element={ <Contact /> } />
+        <Route path="/sobrenosotros" element={ <AboutUs /> } />
       </Routes>
       <Footer />
     </BrowserRouter>
