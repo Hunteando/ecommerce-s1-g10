@@ -23,8 +23,8 @@
 
 .valueCart {
   position: relative;
-  bottom: 25px;
-  right: 25px;
+  bottom: 5px;
+  left: 5px;
   font-size: 20px;
   font-weight: bold;
   color: var(--white)
@@ -33,6 +33,15 @@
 .bgButton {
   background-color: var(--green);
   font-weight: bold;
+}
+
+.bgModal {
+  background-color: var(--pinky);
+}
+
+.btnDeleteProd {
+  border: none;
+  background-color: transparent;
 }
 
 /* media query mobile */
@@ -206,7 +215,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 28px;
   }
 
   .imgDetail {
@@ -320,6 +329,19 @@
     border-radius: 10px;
   }
 
+  .imgTable {
+    width: 40px;
+  }
+
+  .btnDeleteCart {
+    background-color: var(--green);
+    font-size: 10px;
+    width: 25px;
+    height: 28px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
   /* Checkout */
   .h3Checkout {
     font-size: 15px;

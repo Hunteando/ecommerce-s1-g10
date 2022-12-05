@@ -14,27 +14,31 @@ import Contact from "./components/Contact"
 import AboutUs from "./components/AboutUs"
 import AdminPanel from "./components/AdminPanel"
 import EditProducts from "./components/EditProducts"
+import CartProvider from './context/CartContext'
 
 function App() {
   return (
     <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={ <Category1 /> } />
-        <Route path="/login" element={ <Login /> } />
-        <Route path="/recuperarpassword" element={ <PasswordRecovery /> } />
-        <Route path="/registro" element={ <Register /> } />
-        <Route path="/cart" element={ <Cart /> } />
-        <Route path="/checkout" element={ <Checkout /> } />
-        <Route path="/productos" element={ <ProductsContainer /> } />
-        <Route path='/item/:itemId' element={ <ItemDetailContainer /> } />
-        <Route path='/paneldeusuario' element={ <UserPanel /> } />
-        <Route path='/paneladministrador' element={ <AdminPanel /> } />
-        <Route path='/modificarproducto' element={ <EditProducts /> } />
-        <Route path="/contacto" element={ <Contact /> } />
-        <Route path="/sobrenosotros" element={ <AboutUs /> } />
-      </Routes>
-      <Footer />
+      <CartProvider>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={ <Category1 /> } />
+          <Route path="/categorias/:categoryId" element={ <ProductsContainer /> } />
+          <Route path="/login" element={ <Login /> } />
+          <Route path="/recuperarpassword" element={ <PasswordRecovery /> } />
+          <Route path="/registro" element={ <Register /> } />
+          <Route path="/cart" element={ <Cart /> } />
+          <Route path="/checkout" element={ <Checkout /> } />
+          <Route path="/productos" element={ <ProductsContainer /> } />
+          <Route path='/item/:itemId' element={ <ItemDetailContainer /> } />
+          <Route path='/paneldeusuario' element={ <UserPanel /> } />
+          <Route path='/paneladministrador' element={ <AdminPanel /> } />
+          <Route path='/modificarproducto/' element={ <EditProducts /> } />
+          <Route path="/contacto" element={ <Contact /> } />
+          <Route path="/sobrenosotros" element={ <AboutUs /> } />
+        </Routes>
+        <Footer />
+      </CartProvider>
     </BrowserRouter>
   )
 }

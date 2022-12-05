@@ -1,30 +1,23 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import ItemDetail from './ItemDetail'
-import productos from "../mocks/fakeapi"
+import { getFirestore, doc, getDoc } from 'firebase/firestore'
 
 const ItemDetailContainer = () => {
     const [data, setData] = useState([])
     const { itemId } = useParams()
 
     useEffect(() => {
-      const getData = new Promise(resolve => {
-          resolve(productos)
-      })
-      getData.then(res => setData(res))
+      const db = getFirestore()
+      
+      const queryDoc = doc(db, 'items', itemId)
+      getDoc(queryDoc)
+          .then(res => setData({id: res.id, ...res.data()}))
   }, [itemId])
 
   return (
     <div>
-      {
-        data.map(product => {
-          return (
-            itemId == product.id ?
-            <ItemDetail key={product.id} product={product} /> :
-            null
-          )
-        })
-      }
+      <ItemDetail data={data} />
     </div>
   )
 }

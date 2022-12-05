@@ -7,7 +7,7 @@ const Item = ({ info }) => {
             <img src={imagen} className="card-img-top" alt="imagen-producto" />
             <div className="card-body">
                 <h5 className="card-title">{nombre}</h5>
-                <p className="card-text">{precio}</p>
+                <p className="card-text">${precio}</p>
                 <Link to={`/item/${id}`}>
                     <span className="btn bgButton">Ver más</span>
                 </Link>

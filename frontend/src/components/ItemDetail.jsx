@@ -1,7 +1,14 @@
 import ItemCount from "./ItemCount"
+import { useCartContext } from '../context/CartContext'
 
-const ItemDetail = ({ product }) => {
-  const { id, nombre, precio, categoria, descripcion, imagen, stock } = product
+const ItemDetail = ({ data }) => {
+  const {addItem} = useCartContext()
+
+  const onAdd = (cantidad) => {
+    addItem(data, cantidad)
+  }
+
+  const { id, nombre, precio, categoria, descripcion, imagen, stock } = data
   return (
     <div key={id} className='container my-4 divDetail'>
       <div className='col-sm-12 col-md-6 col-lg-7'>
@@ -14,16 +21,14 @@ const ItemDetail = ({ product }) => {
           <h4>Precio:
             <span> {precio}</span>
           </h4>
-          <ItemCount initial={1} stock={stock} />
         </div>
         <hr />
         <p className="descriptionDetail">Descripción: {descripcion}</p>
         <hr />
         <p className="stockDetail">Categoría: {categoria}</p>
         <p className="stockDetail">Stock: {stock}</p>
-        <div className="d-flex justify-content-center align-items-center">
-          <button className="btn btnDetail text-dark fw-bold">Agregar al carrito</button>
-        </div>
+        <hr />
+        <ItemCount initial={1} stock={stock} onAdd={onAdd} />
       </div>
     </div>
   )

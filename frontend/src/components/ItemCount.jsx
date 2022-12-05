@@ -17,6 +17,7 @@ const ItemCount = ({ initial, stock, onAdd }) => {
             <button disabled={count <= 1} className='btnAddLess' onClick={remove}><BsFillPatchMinusFill /></button>
             <span className='spanItemCount'>{count}</span>
             <button disabled={count >= stock} className='btnAddLess' onClick={add}><BsFillPatchPlusFill /></button>
+            <button className="btn btnDetail text-dark fw-bold" disabled={stock <= 0} onClick={() => onAdd(count)}>Agregar al carrito</button>
         </div>
     )
 }

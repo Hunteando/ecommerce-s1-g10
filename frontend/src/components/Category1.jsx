@@ -1,16 +1,25 @@
 import { useState, useEffect } from "react"
 import ItemList from "./ItemList"
-import productos from "../mocks/fakeapi"
+import { useParams } from 'react-router-dom'
+import { collection, getDocs, getFirestore, query, where } from 'firebase/firestore'
 
 const Category1 = () => {
     const [data, setData] = useState([])
+    const { categoryId } = useParams()
 
     useEffect(() => {
-        const getData = new Promise(resolve => {
-            resolve(productos)
-        })
-        getData.then(res => setData(res))
-    }, [])
+        const db = getFirestore()
+
+        const queryItems = collection(db, 'items')
+        if(categoryId){
+            const queryFilter = query(queryItems, where('categoria', '==', categoryId))
+            getDocs(queryFilter)
+                .then(res => setData(res.docs.map(item => ({id: item.id, ...item.data()}))))
+        } else {
+            getDocs(queryItems)
+                .then(res => setData(res.docs.map(item => ({id: item.id, ...item.data()}))))
+        }
+    }, [categoryId])
         
     return (
         <>
