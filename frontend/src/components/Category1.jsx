@@ -31,12 +31,19 @@ const Category1 = () => {
                 <ItemList data={data} />
             </div>
         </div>
-        <div className="container mt-4">
-            <div className="divCategory1">
-                <h1>Categoría 2</h1>
+        <div className="container mt-5 d-flex flex-column justify-content-center align-items-center">
+            <div className="divCategory1 divText">
+                <h1>Nuestras redes</h1>
             </div>
-            <div className="divCategory2 d-flex flex-wrap mt-4 justify-content-center">
-                <ItemList data={data} />
+            <div className="divCategory2a d-flex flex-wrap mt-4 justify-content-center">
+                <div className="d-flex justify-content-center flex-column align-items-center">
+                    <img src="https://i.ibb.co/j6xJPTf/instagram.png" alt="instagram" className="imgRedes" />
+                    <p>Ir a Instagram</p>
+                </div>
+                <div className="d-flex justify-content-center flex-column align-items-center">
+                    <img src="https://i.ibb.co/bRXHbjW/facebook.png" alt="facebook" className="imgRedes" />
+                    <p>Ir a Facebook</p>
+                </div>
             </div>
         </div>
         </>

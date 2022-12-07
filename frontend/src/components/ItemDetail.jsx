@@ -1,5 +1,6 @@
 import ItemCount from "./ItemCount"
 import { useCartContext } from '../context/CartContext'
+import { FaEdit } from "react-icons/fa";
 
 const ItemDetail = ({ data }) => {
   const {addItem} = useCartContext()
@@ -15,7 +16,7 @@ const ItemDetail = ({ data }) => {
         <img className="imgDetail" src={imagen} alt='product-img' />
       </div>
       <div className='col-sm-12 col-md-6 col-lg-2 bgSecondColumnDetail'>
-        <h3>{nombre}</h3>
+        <h3>{nombre}</h3> 
         <hr />
         <div className="priceQuantity d-flex justify-content-center align-items-center gap-5">
           <h4>Precio:

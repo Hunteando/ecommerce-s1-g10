@@ -35,12 +35,12 @@ const Footer = () => {
                             </Link>
                         </div>
                         <div>
-                            <Link to='/' className='text-decoration-none'>
+                            <Link to='/sobrenosotros' className='text-decoration-none'>
                                 <span className='linkFooter'>Sobre Nosotros</span>
                             </Link>
                         </div>
                         <div>
-                            <Link to='/' className='text-decoration-none'>
+                            <Link to='/contacto' className='text-decoration-none'>
                                 <span className='linkFooter'>Contacto</span>
                             </Link>
                         </div>

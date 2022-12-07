@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { collection, deleteDoc, getDocs, getFirestore, doc, where, addDoc, getDoc } from 'firebase/firestore'
+import { collection, deleteDoc, getDocs, getFirestore, doc, addDoc, getDoc } from 'firebase/firestore'
 import AdminPanelProducts from "./AdminPanelProducts"
 
 const AdminPanel = () => {
@@ -38,11 +38,11 @@ const AdminPanel = () => {
     const getProductsById = async (id) => {
         const db = getFirestore()
         const product = await getDoc( doc(db, 'items', id) )
-        if(product.exists()) {
-            console.log(product.data())
-        } else {
-            console.log('asdasdasda')
-        }
+        setNombre(product.data().nombre)
+        setPrecio(product.data().precio)
+        setCategoria(product.data().categoria)
+        setDescripcion(product.data().descripcion)
+        setStock(product.data().stock)
     }
 
     useEffect(() => {
@@ -167,7 +167,12 @@ const AdminPanel = () => {
                         <tbody>
                             {data.map((product) => {
                                 return (
-                                    <AdminPanelProducts key={product.id} id={product.id} nombre={product.nombre} handleDelete={handleDelete} getProductsById={getProductsById} />
+                                    <AdminPanelProducts 
+                                    key={product.id} 
+                                    id={product.id} 
+                                    nombre={product.nombre} 
+                                    handleDelete={handleDelete}
+                                    getProductsById={getProductsById}  />
                                 )
                             })}
                         </tbody>

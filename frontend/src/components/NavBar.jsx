@@ -41,10 +41,6 @@ const NavBar = () => {
                         </li>
                     </ul>
                     <div className="d-flex gap-3 me-3 divInputs">
-                        <form className="d-flex">
-                            <input className="form-control me-2" type="search" placeholder="Ingrese su busqueda..." aria-label="Search" />
-                            <button className="btn btn-outline-light" type="submit">Buscar</button>
-                        </form>
                         <div className="d-flex">
                         <Link to='/login'>
                             <button className="btn btn-outline-light" type="submit">Iniciar sesión</button>

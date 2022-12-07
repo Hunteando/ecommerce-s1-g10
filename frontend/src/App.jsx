@@ -13,7 +13,6 @@ import UserPanel from "./components/UserPanel"
 import Contact from "./components/Contact"
 import AboutUs from "./components/AboutUs"
 import AdminPanel from "./components/AdminPanel"
-import EditProducts from "./components/EditProducts"
 import CartProvider from './context/CartContext'
 
 function App() {
@@ -33,7 +32,6 @@ function App() {
           <Route path='/item/:itemId' element={ <ItemDetailContainer /> } />
           <Route path='/paneldeusuario' element={ <UserPanel /> } />
           <Route path='/paneladministrador' element={ <AdminPanel /> } />
-          <Route path='/modificarproducto/' element={ <EditProducts /> } />
           <Route path="/contacto" element={ <Contact /> } />
           <Route path="/sobrenosotros" element={ <AboutUs /> } />
         </Routes>

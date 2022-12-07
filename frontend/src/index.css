@@ -80,6 +80,25 @@
     width: 150px;
   }
 
+  .divText {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .divCategory2a {
+    gap: 20px;
+  }
+
+  .divCategory2a div img {
+    width: 40px;
+  }
+
+  .divCategory2a div p {
+    font-weight: bold;
+  }
+
   /* Login */
   .bgLoginContainer {
     background-color: var(--pinky);
@@ -482,6 +501,25 @@
     text-decoration: none;
     color: black;
   }
+
+  /* Edit Product */
+  .lblEditProduct {
+    font-size: 18px;
+  }
+
+  .inputEditProduct {
+    width: 300px;
+  }
+
+  .btnEditProduct {
+    background-color: var(--green);
+    font-size: 16px;
+    width: 90px;
+  }
+
+  .editProductImg {
+    width: 100px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -499,6 +537,26 @@
 
   .divCategory2 img {
     width: 200px;
+  }
+
+  .divText {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .divCategory2a {
+    gap: 100px;
+  }
+
+  .divCategory2a div img {
+    width: 40px;
+  }
+
+  .divCategory2a div p {
+    font-weight: bold;
+    font-size: 18px;
   }
 
   /* Login */
@@ -825,9 +883,10 @@
     height: 100px;
   }
 
-  .faColorEdit {
+  .btnEdit {
     font-size: 20px;
     margin-right: 5px;
+    border: none;
   }
 
   .faColorTrash {
@@ -852,6 +911,27 @@
   .divCategory2 img {
     width: 180px;
   }
+
+  .divText {
+    width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .divCategory2a {
+    gap: 200px;
+  }
+
+  .divCategory2a div img {
+    width: 40px;
+  }
+
+  .divCategory2a div p {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
   /* Cart */
   .bgCartContainer {
     background-color: var(--pinky);
@@ -980,7 +1060,7 @@
   }
 
   .inputCheckout {
-    width: 700px;
+    width: 400px;
     height: 50px;
   }
 
@@ -1160,5 +1240,20 @@
   .faColorTrash {
     font-size: 24px;
     margin-left: 10px;
+  }
+
+    /* Edit Product */
+  .lblEditProduct {
+    font-size: 25px;
+  }
+
+  .inputEditProduct {
+    width: 400px;
+  }
+
+  .btnEditProduct {
+    background-color: var(--green);
+    font-size: 16px;
+    width: 90px;
   }
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Login = () => {
+
     return ( 
         <main className='d-flex justify-content-center'>
             <div className='row my-5 px-5 d-flex flex-column gap-4 justify-content-center align-items-center container'>
