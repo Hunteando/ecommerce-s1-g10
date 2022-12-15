@@ -16,8 +16,7 @@ const Footer = () => {
                     <div className='divFormFooter'>
                         <label className='labelFooter'>Subscribete a nuestras ofertas</label>
                         <input className='inputFooter' type="email" id="email" name="email" required
-                            placeholder="Ingresa aqui tu email"
-                            minLength="4" maxLength="8" size="10">
+                            placeholder="Ingresa aqui tu email">
                         </input>
                         <button className="btn bgButton btnFooter">Enviar</button>
                     </div>
@@ -46,10 +45,26 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className='navFooter'>
-                        <div><a className='linkFooter' href="#"><FaInstagram/> Instagram </a></div>
-                        <div><a className='linkFooter' href="#"><FaFacebookF/> Facebook</a></div>
-                        <div><a className='linkFooter' href="#"><FaWhatsapp /> Whatsapp</a></div>
-                        <div><a className='linkFooter' href="#"><FaMapMarkedAlt/> Dirección</a></div>
+                        <div>
+                            <a className='linkFooter' target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/tortasbibiymas">
+                                <FaInstagram/> Instagram
+                            </a>
+                        </div>
+                        <div>
+                            <a className='linkFooter' target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/tortasbibiymas">
+                                <FaFacebookF/> Facebook
+                            </a>
+                        </div>
+                        <div>
+                            <a className='linkFooter' target="_blank" rel="noopener noreferrer" href="https://walink.co/17b881">
+                                <FaWhatsapp /> Whatsapp
+                            </a>
+                        </div>
+                        <div>
+                            <a className='linkFooter' target="_blank" rel="noopener noreferrer" href="#">
+                                <FaMapMarkedAlt/> Dirección
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

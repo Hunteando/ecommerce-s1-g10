@@ -37,12 +37,16 @@ const Category1 = () => {
             </div>
             <div className="divCategory2a d-flex flex-wrap mt-4 justify-content-center">
                 <div className="d-flex justify-content-center flex-column align-items-center">
-                    <img src="https://i.ibb.co/j6xJPTf/instagram.png" alt="instagram" className="imgRedes" />
-                    <p>Ir a Instagram</p>
+                    <a className='linkIGFB d-flex justify-content-center flex-column align-items-center' target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/tortasbibiymas">
+                        <img src="https://i.ibb.co/j6xJPTf/instagram.png" alt="instagram" className="imgRedes" />
+                        <p>Ir a Instagram</p>
+                    </a>
                 </div>
                 <div className="d-flex justify-content-center flex-column align-items-center">
+                    <a className='linkIGFB d-flex justify-content-center flex-column align-items-center' target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/tortasbibiymas">
                     <img src="https://i.ibb.co/bRXHbjW/facebook.png" alt="facebook" className="imgRedes" />
                     <p>Ir a Facebook</p>
+                    </a>
                 </div>
             </div>
         </div>

@@ -44,6 +44,15 @@
   background-color: transparent;
 }
 
+.linkIGFB {
+  color: black;
+  text-decoration: none;
+}
+
+.linkIGFB:hover {
+  color: var(--green)
+}
+
 /* media query mobile */
 @media screen and (min-width: 375px) {
   .imgLogo {

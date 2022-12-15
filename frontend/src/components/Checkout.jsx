@@ -3,6 +3,37 @@ import { addDoc, collection, getFirestore } from 'firebase/firestore'
 import { useState } from 'react'
 
 const Checkout = () => {
+
+    const selectEnvios = [
+        {
+            value: 'Seleccione una opción',
+            name: 'Seleccione una opción'
+        },
+        {
+            value: 'Si',
+            name: 'Si'
+        },
+        {
+            value: 'No',
+            name: 'No'
+        }
+    ]
+
+    const selectPagos = [
+        {
+            value: 'Seleccione una opción',
+            name: 'Seleccione una opción'
+        },
+        {
+            value: 'Efectivo',
+            name: 'Efectivo'
+        },
+        {
+            value: 'Transferencia',
+            name: 'Transferencia'
+        }
+    ]
+
     const { cart, totalPay } = useCartContext()
 
     /* Mostrar ID en Modal */
@@ -57,8 +88,7 @@ const Checkout = () => {
                                 <div className="mb-3">
                                     <label className="form-label lblCheckout">Envío</label>
                                     <select className="form-select inputCheckout" aria-label="Default select example" name='envio' onChange={handleInputChange}>
-                                        <option value="1">Si</option>
-                                        <option value="2">No</option>
+                                        {selectEnvios.map(opcion => <option key={opcion.value} value={opcion.value}>{opcion.name}</option>)}
                                     </select>
                                 </div>
                                 <div className="mb-3">
@@ -71,19 +101,25 @@ const Checkout = () => {
                                         name='direccion' />
                                 </div>
                                 <div className="mb-3">
+                                    <label className="form-label lblCheckout">E-mail</label>
+                                    <input 
+                                        type="text" 
+                                        className="form-control inputCheckout" 
+                                        id="exampleInputPassword1"
+                                        onChange={handleInputChange}
+                                        name='email' />
+                                </div>
+                                <div className="mb-3">
                                     <label className="form-label lblCheckout">Método de pago</label>
                                     <select className="form-select inputCheckout" aria-label="Default select example" onChange={handleInputChange} name='pago'>
-                                        <option value="1">Efectivo</option>
-                                        <option value="2">Transferencia</option>
-                                        <option value="3">Mercado Pago</option>
+                                        {selectPagos.map(opcion => <option key={opcion.value} value={opcion.value}>{opcion.name}</option>)}
                                     </select>
                                 </div>
                                 <div className="mb-3">
                                     <p className="pCheckout">
                                         <strong>Atención: </strong>
-                                        Si seleccionas como método de pago, <strong>transferencia</strong>, vas a recibir un
-                                        mensaje con los detalles. Si seleccionas <strong>MercadoPago</strong> serás redirigido para
-                                        realizar tu pago.</p>
+                                        Si seleccionas como método de pago, <strong>transferencia</strong>, envíanos un mensaje de
+                                        Whatsapp.</p>
                                     <p className="pCheckout">Una vez finalizado el pago espera a que nos contactemos para informarte
                                         como y cuando está listo tu pedido.</p>
                                 </div>
