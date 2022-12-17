@@ -1,6 +1,7 @@
 import { useCartContext } from '../context/CartContext'
 import { addDoc, collection, getFirestore } from 'firebase/firestore'
 import { useState } from 'react'
+import emailjs from 'emailjs-com'
 
 const Checkout = () => {
 
@@ -43,10 +44,25 @@ const Checkout = () => {
     const fechaHoy = Date.now()
     const date = new Date(fechaHoy).toLocaleString()
 
+    /* Enviar E-mail */
+    const sendEmail = (e) => {
+        e.preventDefault()
+
+        emailjs.sendForm('service_4tuuub5', 'template_6iuh6ka', e.target, 'jhwcTeXw26aKnEX3B')
+            .then(() => {
+                setTimeout(() => {
+                    window.location.href = "/";
+                }, 2000)
+            })
+    }
+
     /* Llevar datos de inputs */
     const [buyerData, setBuyerData] = useState({
         envio: '',
         direccion: '',
+        nombre: '',
+        email: '',
+        telefono: '',
         pago: ''
     })
 
@@ -64,13 +80,11 @@ const Checkout = () => {
         total: totalPay(),
     }
 
-    const finalizarClick = () => {
+    const finalizarClick = async () => {
         const db = getFirestore()
         const ordersCollection = collection(db, 'orders')
-        addDoc(ordersCollection, order)
-            .then(({ id }) => setShowMeId(id))
+        await addDoc(ordersCollection, order)
     }
-
 
     return (
         <>
@@ -84,7 +98,7 @@ const Checkout = () => {
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body">
-                            <form className="formCheckout d-flex justify-content-center flex-column align-items-center">
+                            <form onSubmit={sendEmail} className="formCheckout d-flex justify-content-center flex-column align-items-center">
                                 <div className="mb-3">
                                     <label className="form-label lblCheckout">Envío</label>
                                     <select className="form-select inputCheckout" aria-label="Default select example" name='envio' onChange={handleInputChange}>
@@ -101,13 +115,31 @@ const Checkout = () => {
                                         name='direccion' />
                                 </div>
                                 <div className="mb-3">
-                                    <label className="form-label lblCheckout">E-mail</label>
+                                    <label className="form-label lblCheckout">Nombre y apellido</label>
                                     <input 
                                         type="text" 
                                         className="form-control inputCheckout" 
                                         id="exampleInputPassword1"
                                         onChange={handleInputChange}
+                                        name='nombre' />
+                                </div>
+                                <div className="mb-3">
+                                    <label className="form-label lblCheckout">E-mail</label>
+                                    <input 
+                                        type="email" 
+                                        className="form-control inputCheckout" 
+                                        id="exampleInputPassword1"
+                                        onChange={handleInputChange}
                                         name='email' />
+                                </div>
+                                <div className="mb-3">
+                                    <label className="form-label lblCheckout">Telefono</label>
+                                    <input 
+                                        type="text" 
+                                        className="form-control inputCheckout" 
+                                        id="exampleInputPassword1"
+                                        onChange={handleInputChange}
+                                        name='telefono' />
                                 </div>
                                 <div className="mb-3">
                                     <label className="form-label lblCheckout">Método de pago</label>
@@ -115,6 +147,7 @@ const Checkout = () => {
                                         {selectPagos.map(opcion => <option key={opcion.value} value={opcion.value}>{opcion.name}</option>)}
                                     </select>
                                 </div>
+                                <input name="showCart" value={cart.map(product => `${product.nombre} x${product.cantidad} $${product.precio} `)} readOnly hidden />
                                 <div className="mb-3">
                                     <p className="pCheckout">
                                         <strong>Atención: </strong>
@@ -124,7 +157,7 @@ const Checkout = () => {
                                         como y cuando está listo tu pedido.</p>
                                 </div>
                                 <div className='d-flex gap-5 justify-content-end align-items-center col-12'>
-                                    <button onClick={finalizarClick} className="btn btnCheckout text-dark fw-bold">Finalizar</button>
+                                    <button type="submit" onClick={finalizarClick} className="btn btnCheckout text-dark fw-bold">Finalizar</button>
                                 </div>
                             </form>
                         </div>
